@@ -155,12 +155,14 @@ header{
     aspect-ratio: 1;
     background-color: #000;
     margin-bottom: var(--space-md);
+    overflow: hidden;
 }
 
 .card-box img{
     object-fit: cover;
     height: 100%;
-    width: 100%;    
+    width: 100%;
+    transition: transform .5s ease;
 }
 
 
@@ -196,6 +198,13 @@ header{
 .my_bg-white.rx{
     right: 0;
 }
+
+.card-box:hover img{
+    transform: scale(1.5);
+}
+
+
+
 
 @media screen and ( min-width: 768px ){
 
