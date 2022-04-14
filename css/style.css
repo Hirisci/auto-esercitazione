@@ -182,5 +182,41 @@ header{
     top: var(--space-xxl);
     color: var(--clr-text-1);
     background-color: var(--clr-bg);
+
+}
+
+.my_bg-white{
+    top: calc( -1 * var(--space-xxl));
+    position: absolute;
+    height: 1400px;
+    width: calc( 3 * var(--space-xxl));
+    background-color: #fff;
+}
+
+.my_bg-white.rx{
+    right: 0;
+}
+
+@media screen and ( min-width: 768px ){
+
+    .wrapper{
+        margin-right: 0;
+        padding-top: var(--space-xxl);
+        padding-bottom: calc( 2 * var(--space-xxl));
+    }
+
+    .inner-wrapper{
+        left: 0;
+    }
+    
+    .text-box{
+        position: absolute;
+        margin-right: var(--space-xxl);
+        width: 60%;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        transform: translateY(75%);
+    }
 }
 
