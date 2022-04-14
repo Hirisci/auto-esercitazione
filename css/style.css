@@ -23,6 +23,10 @@
     
 }
 
+.text-color1{
+    color: var(--clr-bg)
+}
+
 /*╔═══════════════╗
        DEBUG
   ╚═══════════════╝*/
@@ -53,6 +57,11 @@ body{
 
 section{
     padding: var(--space-xxl);
+}
+
+.my_container{
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* --- BUTTON --- */
@@ -119,7 +128,7 @@ header{
 
 /* --- GOALS --- */
 
-.goals{
+.goals, .contact{
     background-image: url(../img/-min.png);
     background-position: center;
     background-size: cover;
@@ -307,4 +316,44 @@ header{
     width: 75px;
     border: 5px solid var(--clr-brd);
     overflow: hidden;
+}
+
+/* --- DISCLAMER --- */
+
+.disclamer .my_container{
+    padding: 0 100px;
+}
+
+.disclamer .my_container .my_btn.btn-pink:hover, .contact .my_container .my_btn.btn-pink:hover{
+    background-color: var(--clr-bg);
+}
+
+/*--- CONTACT ---*/
+
+.post-card{
+    background-color: #fff;
+}
+
+.post-card input{
+    width: 100%;
+    padding: 10px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 5px;
+}
+
+.list ol li span{
+    color: var(--clr-bg-hero);
+}
+
+.list div.text-end{
+    font-size: 90px;
+    color: var(--clr-bg-hero);
+}
+
+
+/* --- END MAIN --- */
+
+.end-main{
+    background-color: var(--clr-bg);
 }
