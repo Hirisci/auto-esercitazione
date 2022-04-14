@@ -10,6 +10,8 @@
     --clr-bg: #7D20D3;
     --clr-bg-hero: #ED007C;
     --clr-bg-img-gols: #F3E9FD;
+    /*- COLORI BORDI -*/
+    --clr-brd: #D2A8F8;
 
     /*- DIMENSIONI GUTTER*/
     --space-xxs: 0.25rem;
@@ -147,9 +149,6 @@ header{
 
 /* --- PORFOLIO --- */
 
-.portfolio{
-    padding-bottom: calc(var(--space-xxl) *2);
-}
 
 .card-box{
     aspect-ratio: 1;
@@ -209,6 +208,11 @@ header{
 
 
 @media screen and ( min-width: 768px ){
+
+    .portfolio{
+        padding-bottom: calc(var(--space-xxl) *3);
+    }
+    
 
     .wrapper{
         margin-right: 0;
@@ -291,4 +295,16 @@ header{
 
 .customers{
     background-color: var(--clr-bg);
+}
+
+.customers .card{
+    border-radius: 2rem;
+}
+
+.card .user{
+    aspect-ratio: 1;
+    height: auto;
+    width: 75px;
+    border: 5px solid var(--clr-brd);
+    overflow: hidden;
 }
