@@ -184,6 +184,7 @@ header{
     top: var(--space-xxl);
     color: var(--clr-text-1);
     background-color: var(--clr-bg);
+    margin-bottom: var(--space-xxl);
 
 }
 
@@ -193,6 +194,7 @@ header{
     height: 1400px;
     width: calc( 3 * var(--space-xxl));
     background-color: #fff;
+    display: none;
 }
 
 .my_bg-white.rx{
@@ -219,6 +221,7 @@ header{
     }
 
     .my_bg-white{
+        display: block;
         height: 900px;
     }
     
@@ -233,6 +236,21 @@ header{
     }
 }
 
+@media screen and ( min-width: 992px ){
+
+    .portfolio{
+        padding-bottom: calc( 3 * var(--space-xxl));
+    }
+
+
+    .my_bg-white{
+        display: block;
+        height: 800px;
+    }
+ 
+}
+
+
 @media screen and ( min-width: 1200px ){
 
     .wrapper{
@@ -241,22 +259,36 @@ header{
 
     .my_bg-white{
         top: calc( -2 * var(--space-xxl));
-        height: 1100px;
+        height: 1000px;
     }
 
-    .inner-wrapper{
-        left: 0;
-    }
     
     .text-box{
-        position: absolute;
         margin-right: none;
         width: 45%;
         right: calc(-2 * var(--space-xxl));
-        bottom: 0;
-        top: auto;
         transform: translateY(60%);
         
     }
 }
 
+
+@media screen and ( min-width: 1400px ){
+
+
+
+    .my_bg-white{
+        height: 1100px;
+    }
+
+    
+
+}
+
+
+
+/* --- COSTUMERS ---*/
+
+.customers{
+    background-color: var(--clr-bg);
+}
