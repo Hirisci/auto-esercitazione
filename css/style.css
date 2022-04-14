@@ -1,0 +1,182 @@
+/*╔═══════════════╗
+      VARIABILI
+  ╚═══════════════╝*/
+
+ :root{
+    /*- COLORI TESTO -*/
+    --clr-text: #000;
+    --clr-text-1: white;
+    /*- COLORI BG -*/
+    --clr-bg: #7D20D3;
+    --clr-bg-hero: #ED007C;
+    --clr-bg-img-gols: #F3E9FD;
+
+    /*- DIMENSIONI GUTTER*/
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2.75rem;
+    --space-xxl: 3rem;
+    
+}
+
+/*╔═══════════════╗
+       DEBUG
+  ╚═══════════════╝*/
+  .debug header{
+      background-color: aqua;
+  }
+
+  .debug aside{
+      background-color: black;
+  }
+
+  .debug .content{
+      background-color: coral;
+  }
+  
+  .debug footer{
+      background-color: brown;
+  }
+  
+/*╔═══════════════╗
+       COMMON
+  ╚═══════════════╝*/
+
+body{
+    /* font-family: */
+    color: var(--clr-text);
+}
+
+section{
+    padding: var(--space-xxl);
+}
+
+/* --- BUTTON --- */
+
+.my_btn{
+    color: inherit;
+    display: inline-block;
+    font-weight: 400px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    box-sizing: .25rem;
+}
+
+.btn-pink:hover{
+    background-color: #fff;
+    color: var(--clr-bg);
+}
+
+.btn-pink{
+    background-color: var(--clr-bg-hero);
+}
+
+
+
+/*╔═══════════════╗
+    TAG SEMANTICI
+  ╚═══════════════╝*/
+
+
+/* --- HEADER --- */
+
+header{
+    padding: var(--space-md)
+}
+
+
+.btn-ham-menu i{
+    font-size: 2rem;
+    
+}
+
+.logo{
+    font-size: 2rem;
+    line-height: 47.5px;
+}
+
+/* --- HERO --- */
+
+.hero{
+    background-color: var(--clr-bg);
+    color: var(--clr-text-1);
+}
+
+.img-box{
+    aspect-ratio: 1 ;
+}
+
+/* --- GOALS --- */
+
+.goals{
+    background-image: url(../img/-min.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.goals .card{
+    border-radius: 15px;
+}
+.card-title{
+    color: var(--clr-bg);
+}
+.card-body{
+    color: rgb(149, 146, 146);
+}
+.card .img{
+    background-color: var(--clr-bg-img-gols);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .img i{
+    font-size: 60px;
+    color: var(--clr-bg)
+}
+
+/* --- PORFOLIO --- */
+
+.card-box{
+    aspect-ratio: 1;
+    background-color: #000;
+    margin-bottom: var(--space-md);
+}
+
+.card-box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;    
+}
+
+
+.wrapper{
+    background-color: var(--clr-bg-hero);
+    margin-right: var(--space-xxl);
+    padding-top: var(--space-xxl);
+    display: block;
+    position: relative;
+}
+
+.inner-wrapper{
+    position: relative;
+    left: var(--space-xxl);
+}
+
+.text-box{
+    position: relative;
+    top: var(--space-xxl);
+    color: var(--clr-text-1);
+    background-color: var(--clr-bg);
+}
+
