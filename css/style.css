@@ -147,6 +147,10 @@ header{
 
 /* --- PORFOLIO --- */
 
+.portfolio{
+    padding-bottom: calc(var(--space-xxl) *2);
+}
+
 .card-box{
     aspect-ratio: 1;
     background-color: #000;
